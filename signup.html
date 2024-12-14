@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Melody Stream</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Melody Stream</h1>
+                <p>Your Ultimate Music Experience</p>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+            <nav class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="artists.html">Artists</a>
+                <a href="media.html" class="active">Media</a>
+
+                <a href="tunein.html">Tune In</a>
+                <a href="contact.html">Contact</a>
+                <a href="signup.html" class="cta">Sign Up</a>
+
+            </nav>
+        </div>
+    </header>
+    <section id="signup" style="text-align: center; margin: 50px auto; max-width: 400px;">
+        <h2 style="color: #282828; font-size: 2em; margin-bottom: 20px;">Join Melody Stream</h2>
+        <form id="signupForm" style="display: flex; flex-direction: column; gap: 15px; background: #fff; padding: 20px; border: 1px solid #ccc; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <label for="username" style="font-weight: bold; text-align: left; font-size: 1em;">Username</label>
+            <input type="text" id="username" name="username" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 1em;">
+    
+            <label for="email" style="font-weight: bold; text-align: left; font-size: 1em;">Email</label>
+            <input type="email" id="email" name="email" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 1em;">
+    
+            <label for="password" style="font-weight: bold; text-align: left; font-size: 1em;">Password</label>
+            <input type="password" id="password" name="password" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 1em;">
+    
+            <button type="submit" style="background: #00bcd4; color: #fff; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-size: 1em; transition: background 0.3s;">Sign Up</button>
+        </form>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <h3>Follow Us</h3>
+            <ul class="social-icons">
+                <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+            <p>© 2024 Melody Stream. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- Add FontAwesome CDN for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

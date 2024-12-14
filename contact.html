@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Melody Stream</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="script.js"></script>
+    <style>
+       
+
+        #contact-form {
+            margin: 20px auto;
+            max-width: 600px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f5f5f5;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #contact-form label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        #contact-form input,
+        #contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #contact-form button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icons li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Melody Stream</h1>
+                <p>Your Ultimate Music Experience</p>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="media.html" class="active">Media</a>
+
+                <a href="artists.html">Artists</a>
+                <a href="tunein.html">Tune In</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a href="signup.html" class="cta">Sign Up</a>
+
+            </nav>
+        </div>
+    </header>
+    <section id="contact-info">
+        <h2>Connect with Us</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Email</h3>
+                <p><a href="mailto:info@melodystream.com">info@melodystream.com</a></p>
+            </div>
+            <div class="card">
+                <h3>Phone</h3>
+                <p>+1 800 123 456</p>
+            </div>
+            <div class="card">
+                <h3>Social Media</h3>
+                <p>Follow us on <a href="#">Twitter</a>, <a href="#">Instagram</a>, and <a href="#">Facebook</a>.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact-form">
+        <h2>Send Us a Message</h2>
+        <form id="form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <h3>Follow Us</h3>
+            <ul class="social-icons">
+                <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+            <p>© 2024 Melody Stream. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Your message has been sent successfully!");
+        });
+    </script>
+</body>
+</html>
